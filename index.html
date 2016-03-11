@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Date Night In!</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="headerContainer">
+			<img src="images/glasses.png" alt="wine glass" class="wineLogo">
+			<h1>Date Night In</h1>
+			<p>You find a date, and this app will take care of the rest!</p>
+		</div>
+		<form action="" class="">
+			<div class="movie section">
+				<h2>Whaddaya wanna watch?</h2>
+				<input type="text" class="genre" placeholder="enter a genre" required>
+				<p class=" error genreError">Genre not found - please re-enter the genre</p>
+				<p class=" error noGenreError">Please enter a genre</p>
+			</div>
+			<div class="meal section">
+				<h2>Whaddaya wanna eat?</h2>
+				<h4>Maximum Effort Level</h4>
+
+				<div class="chooseEffort">
+					<div class="effort noEffort" data-time="0" data-effort=""></div>
+					<div class="effort lowEffort" data-time="1800" data-effort=""></div>
+					<div class="effort medEffort" data-time="3600" data-effort=""></div>
+					<div class="effort highEffort" data-time="10800" data-effort=""></div>
+					<p class=" error mealEffortError">Please select effort level</p>
+				</div>
+				<br><input type="text" class="meal" placeholder="enter main ingredient" required>
+				<p class=" error mealItemError">Please enter ingredient</p>
+			</div>
+			<div class="drink section">
+				<h2>Whaddaya wanna drink?</h2>
+				<h4>Desired Alcohol Content Level</h4>
+	
+				<div class="chooseDrunk">
+					
+					<i class="fa fa-beer fa-flip-horizontal fa-1x drunk noDrunk" data-drink="0"></i>
+
+					<i class="fa fa-beer fa-flip-horizontal fa-2x drunk lowDrunk" data-drink="1"></i>
+					
+					<i class="fa fa-beer fa-flip-horizontal fa-3x drunk medDrunk" data-drink="2"></i>
+					
+					<i class="fa fa-beer fa-flip-horizontal fa-5x drunk highDrunk" data-drink="3"></i>
+
+					<p class=" error drunkError">Please select alcohol level</p>
+					
+				</div>
+			</div>
+			<div class="buttons">
+				<button type="submit" class="submit">submit</button>
+				<button type="reset" class="reset">clear</button>
+			</div>
+		</form>
+
+	</div>
+	<div class="results">
+		<a href="#" class="close">&times;</a>
+		<div id="floatingCirclesG">
+			<div class="f_circleG" id="frotateG_01"></div>
+			<div class="f_circleG" id="frotateG_02"></div>
+			<div class="f_circleG" id="frotateG_03"></div>
+			<div class="f_circleG" id="frotateG_04"></div>
+			<div class="f_circleG" id="frotateG_05"></div>
+			<div class="f_circleG" id="frotateG_06"></div>
+			<div class="f_circleG" id="frotateG_07"></div>
+			<div class="f_circleG" id="frotateG_08"></div>
+		</div>
+		<div class="resultsContainer"></div>
+		<a href="#" class="retry">Load another</a>	
+		
+	</div>
+		
+	<div class="ajaxError error2">
+		<a href="#" class="ajaxErrClose">&times;</a>
+
+		<span class="fa-stack fa-3x">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-exclamation fa-stack-1x"></i>
+		</span>
+
+		<p>Error - please try your search again</p>
+	</div>
+
+	<div class="mealError error2">
+		<a href="#" class="mealErrClose">&times;</a>
+
+		<span class="fa-stack fa-3x">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-exclamation fa-stack-1x"></i>
+		</span>
+
+		<p>Error - please re-enter your meal search</p>
+	</div>
+		
+	</body>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
